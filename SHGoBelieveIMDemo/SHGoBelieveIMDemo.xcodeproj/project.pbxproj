@@ -15,6 +15,16 @@
 		7C6D29A6200F5916007BB32E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D29A5200F5916007BB32E /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C6D29B1200F5A68007BB32E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C6D29AC200F5A68007BB32E /* SHGoBelieveIM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C6D2958200F4F34007BB32E;
+			remoteInfo = SHGoBelieveIM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7C6D2993200F5916007BB32E /* SHGoBelieveIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHGoBelieveIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6D2996200F5916007BB32E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +36,7 @@
 		7C6D29A2200F5916007BB32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6D29A4200F5916007BB32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6D29A5200F5916007BB32E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C6D29AC200F5A68007BB32E /* SHGoBelieveIM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SHGoBelieveIM.xcodeproj; path = ../SHGoBelieveIM/SHGoBelieveIM.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 		7C6D298A200F5916007BB32E = {
 			isa = PBXGroup;
 			children = (
+				7C6D29AC200F5A68007BB32E /* SHGoBelieveIM.xcodeproj */,
 				7C6D2995200F5916007BB32E /* SHGoBelieveIMDemo */,
 				7C6D2994200F5916007BB32E /* Products */,
 			);
@@ -69,6 +81,14 @@
 				7C6D29A5200F5916007BB32E /* main.m */,
 			);
 			path = SHGoBelieveIMDemo;
+			sourceTree = "<group>";
+		};
+		7C6D29AD200F5A68007BB32E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C6D29B2200F5A68007BB32E /* SHGoBelieveIM.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,12 +137,28 @@
 			mainGroup = 7C6D298A200F5916007BB32E;
 			productRefGroup = 7C6D2994200F5916007BB32E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C6D29AD200F5A68007BB32E /* Products */;
+					ProjectRef = 7C6D29AC200F5A68007BB32E /* SHGoBelieveIM.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7C6D2992200F5916007BB32E /* SHGoBelieveIMDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7C6D29B2200F5A68007BB32E /* SHGoBelieveIM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SHGoBelieveIM.framework;
+			remoteRef = 7C6D29B1200F5A68007BB32E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7C6D2991200F5916007BB32E /* Resources */ = {
