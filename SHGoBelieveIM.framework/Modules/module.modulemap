@@ -1,0 +1,6 @@
+framework module SHGoBelieveIM {
+  umbrella header "SHGoBelieveIM.h"
+
+  export *
+  module * { export * }
+}
