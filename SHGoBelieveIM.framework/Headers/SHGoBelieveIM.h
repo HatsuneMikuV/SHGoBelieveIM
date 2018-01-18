@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char SHGoBelieveIMVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SHGoBelieveIM/PublicHeader.h>
 
+#import "SHIMManger.h"
+
 

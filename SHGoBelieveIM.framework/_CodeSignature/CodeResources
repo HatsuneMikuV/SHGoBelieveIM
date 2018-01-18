@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/SHGoBelieveIM.h</key>
 		<data>
-		f4k6eGMV8dj3dgn+TDV/sj0B0jA=
+		x6QEE4AmzO5BriN/6ec1jk5j17E=
 		</data>
 		<key>Headers/SHIMManger.h</key>
 		<data>
-		aID/PV/wn3O0Ea/Qwu3T7ZCVryI=
+		x85wpicXJgOwAT33PLs7Sv5uq9M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0xXv5QnF53bEzV52YpOrUhxCVtE=
+		HO62EKuYiTpLZOnFp0xgDCYr2Ks=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,22 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f4k6eGMV8dj3dgn+TDV/sj0B0jA=
+			x6QEE4AmzO5BriN/6ec1jk5j17E=
 			</data>
 			<key>hash2</key>
 			<data>
-			B8HVDK18ul+XzIKr7+ZlFvnyNv47k329LWEw4YoDzsU=
+			FLQu9olw9JQKbcLgCPMBCzgnXJkSrZ25Q1K2r0n3JnE=
 			</data>
 		</dict>
 		<key>Headers/SHIMManger.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aID/PV/wn3O0Ea/Qwu3T7ZCVryI=
+			x85wpicXJgOwAT33PLs7Sv5uq9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			F+cEgr+Jrl4GWiuyldDt3vtRQgz1bvvS42WLU2WM0Xw=
+			2NQcysXLMANscfq0G0eTZ+j84KT3Td4LYyGDp0WhjqM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
