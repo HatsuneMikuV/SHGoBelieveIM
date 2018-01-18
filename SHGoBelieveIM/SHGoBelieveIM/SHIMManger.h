@@ -78,7 +78,7 @@
 /** 进入后台 */
 - (void)enterBackground;
 
-/** 建立连接 */
+/** 建立连接 (token 不能为空)*/
 - (void)connectToServerWithSendToken:(NSString *)token;
 
 /** 断开连接 */

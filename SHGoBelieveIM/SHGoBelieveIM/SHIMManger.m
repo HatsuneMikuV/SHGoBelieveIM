@@ -55,9 +55,11 @@ static dispatch_once_t onceToken;
 
 #pragma makr - 建立连接
 -(void)connectToServerWithSendToken:(NSString *)token{
-    _reconnectionCount = 0;
-    self.token = token;
-    [self connectToServer];
+    if (token && ![token isEqualToString:@""]) {
+        _reconnectionCount = 0;
+        self.token = token;
+        [self connectToServer];
+    }
 }
 - (void)connectToServer{
     [self disConnect];// 断开上次的连接

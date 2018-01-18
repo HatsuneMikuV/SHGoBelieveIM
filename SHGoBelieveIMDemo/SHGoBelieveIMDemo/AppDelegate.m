@@ -20,7 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [SHIMManger sharedInstance].host = @"";
+    [SHIMManger sharedInstance].host = @"imnode2.gobelieve.io";
+    
+    NSString *deviceID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+
+    [SHIMManger sharedInstance].deviceID = deviceID;
+    [[SHIMManger sharedInstance] startRechabilityNotifier];
+    
     return YES;
 }
 

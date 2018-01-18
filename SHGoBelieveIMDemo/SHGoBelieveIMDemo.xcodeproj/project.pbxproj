@@ -14,6 +14,8 @@
 		7C6D29A3200F5916007BB32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D29A1200F5916007BB32E /* LaunchScreen.storyboard */; };
 		7C6D29A6200F5916007BB32E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D29A5200F5916007BB32E /* main.m */; };
 		7C6D29B6200F5BEC007BB32E /* SHGoBelieveIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6D29B2200F5A68007BB32E /* SHGoBelieveIM.framework */; };
+		7CF74A9920103C5D002B84EF /* SHBottomInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF74A9820103C5D002B84EF /* SHBottomInputBar.m */; };
+		7CF74A9C20104499002B84EF /* SHTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF74A9A20104499002B84EF /* SHTipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		7C6D29A4200F5916007BB32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6D29A5200F5916007BB32E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C6D29AC200F5A68007BB32E /* SHGoBelieveIM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SHGoBelieveIM.xcodeproj; path = ../SHGoBelieveIM/SHGoBelieveIM.xcodeproj; sourceTree = "<group>"; };
+		7CF74A9520103C5D002B84EF /* SHBottomInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBottomInputBar.h; sourceTree = "<group>"; };
+		7CF74A9820103C5D002B84EF /* SHBottomInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBottomInputBar.m; sourceTree = "<group>"; };
+		7CF74A9A20104499002B84EF /* SHTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTipView.m; sourceTree = "<group>"; };
+		7CF74A9B20104499002B84EF /* SHTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTipView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				7C6D2997200F5916007BB32E /* AppDelegate.m */,
 				7C6D2999200F5916007BB32E /* ViewController.h */,
 				7C6D299A200F5916007BB32E /* ViewController.m */,
+				7CF74A9520103C5D002B84EF /* SHBottomInputBar.h */,
+				7CF74A9820103C5D002B84EF /* SHBottomInputBar.m */,
+				7CF74A9B20104499002B84EF /* SHTipView.h */,
+				7CF74A9A20104499002B84EF /* SHTipView.m */,
 				7C6D299C200F5916007BB32E /* Main.storyboard */,
 				7C6D299F200F5916007BB32E /* Assets.xcassets */,
 				7C6D29A1200F5916007BB32E /* LaunchScreen.storyboard */,
@@ -189,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C6D299B200F5916007BB32E /* ViewController.m in Sources */,
+				7CF74A9C20104499002B84EF /* SHTipView.m in Sources */,
 				7C6D29A6200F5916007BB32E /* main.m in Sources */,
+				7CF74A9920103C5D002B84EF /* SHBottomInputBar.m in Sources */,
 				7C6D2998200F5916007BB32E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
