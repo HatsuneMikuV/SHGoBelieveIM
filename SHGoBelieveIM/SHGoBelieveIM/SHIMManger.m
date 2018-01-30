@@ -57,7 +57,7 @@ static dispatch_once_t onceToken;
 -(void)connectToServerWithSendToken:(NSString *)token{
     if (token && ![token isEqualToString:@""]) {
         _reconnectionCount = 0;
-        self.token = token;
+        self.token = [NSString stringWithFormat:@"%@",token];
         [self connectToServer];
     }
 }
@@ -85,7 +85,7 @@ static dispatch_once_t onceToken;
         RoomMessage *im = [[RoomMessage alloc] init];
         im.sender = self.uid;//发送者
         im.receiver = self.roomID;//发给聊天室
-        im.content = msg;
+        im.content = [NSString stringWithFormat:@"%@",msg];
         [[IMService instance] sendRoomMessage:im];
     }
 }
