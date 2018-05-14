@@ -198,7 +198,7 @@
         rm.content = [[NSString alloc] initWithBytes:p length:data.length-24 encoding:NSUTF8StringEncoding];
         self.body = rm;
         return YES;
-    } else if (self.cmd == MSG_SYSTEM) {
+    } else if (self.cmd == MSG_SYSTEM || self.cmd == MSG_NOTIFICATION) {
         self.body = [[NSString alloc] initWithBytes:p length:data.length-HEAD_SIZE encoding:NSUTF8StringEncoding];
         return YES;
     } else if (self.cmd == MSG_SYNC_BEGIN ||

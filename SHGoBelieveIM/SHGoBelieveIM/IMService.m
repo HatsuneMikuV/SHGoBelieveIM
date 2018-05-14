@@ -478,7 +478,7 @@
         [self handleGroupNotification:msg];
     } else if (msg.cmd == MSG_ROOM_IM) {
         [self handleRoomMessage:msg];
-    } else if (msg.cmd == MSG_SYSTEM) {
+    } else if (msg.cmd == MSG_SYSTEM || msg.cmd == MSG_NOTIFICATION) {
         [self handleSystemMessage:msg];
     } else if (msg.cmd == MSG_CUSTOMER) {
         [self handleCustomerMessage:msg];

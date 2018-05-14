@@ -11,7 +11,7 @@
 #import "IMService.h"
 
 
-@interface SHIMManger()<RoomMessageObserver, TCPConnectionObserver>
+@interface SHIMManger()<RoomMessageObserver, TCPConnectionObserver, SystemMessageObserver>
 
 /**
   存储重连次数
@@ -68,10 +68,12 @@ static dispatch_once_t onceToken;
     [[IMService instance] enterRoom:self.roomID];//进入聊天室
     [[IMService instance] addRoomMessageObserver:self];
     [[IMService instance] addConnectionObserver:self];
+    [[IMService instance] addSystemMessageObserver:self];
 }
 
 #pragma mark - 断开连接
 - (void)disConnect{
+    [[IMService instance] removeSystemMessageObserver:self];
     [[IMService instance] removeRoomMessageObserver:self];
     [[IMService instance] removeConnectionObserver:self];
     [[IMService instance] leaveRoom:self.roomID];//离开聊天室
@@ -160,6 +162,14 @@ static dispatch_once_t onceToken;
         [self.delegate sendMessage:self didMessage:rm.content withState:NO];
     }
     if (self.sendMsgArr) [self.sendMsgArr addObject:rm.content];
+}
+#pragma mark -
+#pragma mark   ==============SystemMessageObserver==============
+-(void)onSystemMessage:(NSString*)sm {
+    if (self.IMlogEnble) NSLog(@"SHIMManger******接收到系统消息，%@", sm);
+    if ([self.delegate respondsToSelector:@selector(receviceSystemMessage:didReceiveMessage:)]) {
+        [self.delegate receviceSystemMessage:self didReceiveMessage:sm];
+    }
 }
 #pragma mark -
 #pragma mark   ============================

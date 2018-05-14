@@ -30,6 +30,14 @@
 -(void)receviceMessage:(SHIMManger *)im didReceiveMessage:(NSString *)msg;
 
 /**
+ 接收系统消息
+ 
+ @param im SHIMManger
+ @param msg 消息体
+ */
+-(void)receviceSystemMessage:(SHIMManger *)im didReceiveMessage:(NSString *)msg;
+
+/**
  连接成功
 
  @param im SHIMManger

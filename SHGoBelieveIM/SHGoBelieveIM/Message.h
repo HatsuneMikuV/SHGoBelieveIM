@@ -33,6 +33,7 @@
 
 #define MSG_CUSTOMER 24
 #define MSG_CUSTOMER_SUPPORT 25
+#define MSG_NOTIFICATION 36
 
 
 //客户端->服务端

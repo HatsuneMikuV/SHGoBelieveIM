@@ -180,6 +180,15 @@
         [SHTipView showError:@"消息发送失败" style:SHProgressTipStyleCenter];
     }
 }
+- (void)receviceSystemMessage:(SHIMManger *)im didReceiveMessage:(NSString *)msg {
+    NSLog(@"系统消息内容：%@", msg);
+    [self.dataArr addObject:msg];
+    [self deleteRedundant];
+    [UIView performWithoutAnimation:^{
+        [self.tableView reloadData];
+        [self scrollToBottomAnimated:NO];
+    }];
+}
 -(void)receviceMessage:(SHIMManger *)im didReceiveMessage:(NSString *)msg {
     [self.dataArr addObject:msg];
     [self deleteRedundant];
